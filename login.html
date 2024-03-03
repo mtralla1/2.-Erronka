@@ -1,0 +1,84 @@
+<?php
+
+  session_start();
+
+  if(isset($_SESSION['erabiltzaile'])) {
+      header("location: ./php/denda.php");
+  }
+
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Form</title>
+  <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <div>
+      <header>
+          <div class="nav-container">
+              <div class="pill-nav">
+                  <a class="aktiboa" href="index.html">Hasiera</a>
+                  <a href="lehiaketak.html">Lehiaketak</a>
+                  <div class="dropdown">
+                    <button class="dropbtn">Gure txirrindulariak</button>
+                    <div class="dropdown-content">
+                        <a href="mutilenTaldea.html">Mutilen taldea</a>
+                        <a href="neskenTaldea.html">Nesken taldea</a>
+                    </div>
+                </div>
+                  <a href="berriak.html">Azken berriak</a>
+                  <a href="elkartea.html">Elkartea</a>
+                  <a href="kontaktua.html">Kontaktua</a>
+              </div>
+
+              
+              <div class="buttons">
+                  <a href="login.html">Saioa Hasi</a>
+                  <a href="register.html">Kontua Sortu</a>
+              </div>
+          </div>
+      </header>
+    </div>
+
+
+    <link rel="stylesheet" href="./css/login-form.css">
+  <div class="register-container">
+      <div class="frf-body">
+          <div id="frf-form">
+              <h3 class="frf-h3">Saioa Hasi</h3>
+              
+              <form id="frf-form-id" class="frf-form-class" method="post" action="./php/login.php">
+
+                  <div class="frf-form-group" >
+                      <label for="email" class="frf-label">Email:</label>
+                      <div class="frf-input-group">
+                        <input type="email" id="email" name="email" class="frf-form-control" required>
+                      </div>
+                  </div>
+
+                  <div class="frf-form-group">
+                    <label for="password" label="frf-label">Pasahitza:</label>
+                    <div class="frf-input-group">
+                      <input type="password" id="password" name="password" class="frf-form-control" required>
+                    </div>
+                  </div>
+
+                  <div class="frf-form-group">
+                    <button type="submit" id="frf-button" class="frf-btn frf-btn-primary frf-btn-lg frf-btn-block">Saioa Hasi</button>
+                  </div>
+
+                    <!--   <p>Kontu bat daukezu ? <a href="login.html">Login</a></p> -->
+                  </div>  
+              </form>          
+          </div>
+      </div>       
+  </div>
+ 
+
+  <footer>
+    <p>&copy; 2024 Tolosaldea Txirrundularitza Taldea</p>
+  </footer>
+</body>
+</html>

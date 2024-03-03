@@ -1,0 +1,189 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
+.pill-nav a {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: white;
+}
+
+.pill-nav a:hover {
+  background-color: #555;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.buttons {
+  display: flex;
+}
+
+.buttons a {
+  padding: 10px 15px;
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  background-color: #007bff;
+  border-radius: 5px;
+}
+
+.buttons a:hover {
+  background-color: #0056b3;
+}
+
+.loginContent {
+  padding: 10px 10px;
+  text-decoration: none;
+  color: white;
+  background-color: #007bff;
+  border-radius: 5px;
+}
+
+.loginContent:hover {
+  background-color: #0056b3;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.ezker {
+  width: 70%;
+}
+
+.eskubi {
+  width: 30%;
+}
+
+.twitter-timeline {
+  display: block;
+  margin-top: 20px;
+}
+
+h4 {
+  margin-top: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Estilos para el botón de Saioa Hasi y Kontua Sortu */
+/* Estilos para el botón de Saioa Hasi y Kontua Sortu */
+/* Estilos para los botones */
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+.buttons a {
+  padding: 10px 15px;
+  margin-left: 10px;
+  text-decoration: none;
+  color: white;
+  background-color: #007bff;
+  border-radius: 5px;
+}
+
+.buttons a:hover {
+  background-color: #0056b3;
+}
+
+/* Mover los botones a la derecha */
+.buttons {
+  margin-left: auto;
+}
+
+
+/* Estilos para el botón dropdown */
+.dropbtn {
+  background-color: #333;
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  position: fixed; /* El header se mantendrá fijo en la parte superior */
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Asegura que el header esté en la capa superior */
+}

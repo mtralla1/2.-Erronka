@@ -1,0 +1,86 @@
+
+.berriak-box-top,
+.berriak-box-bottom {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap;
+}
+
+
+.box-1 {
+    background-color: #f2f2f2; 
+    border: 1px solid #ccc; 
+    padding: 30px; 
+    margin: 20px; 
+    border-radius: 8px; 
+    width: 400px; 
+    height: 500px; 
+    box-sizing: border-box; 
+    text-align: center; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+}
+
+
+.box-1 img {
+    max-width: 100%; 
+    max-height: 50%; 
+    margin-bottom: 20px; 
+
+}
+
+.box-2 {
+    background-color: #f2f2f2; 
+    border: 1px solid #ccc; 
+    padding: 30px; 
+    margin: 20px; 
+    border-radius: 8px; 
+    width: 400px; 
+    height: 500px; 
+    box-sizing: border-box; 
+    text-align: center; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+}
+
+
+.box-2 img {
+    max-width: 100%; 
+    max-height: 55%; 
+    margin-bottom: 20px; 
+    margin-top: auto;
+
+}
+
+.box-3 {
+    background-color: #f2f2f2; 
+    border: 1px solid #ccc; 
+    padding: 30px; 
+    margin: 20px; 
+    border-radius: 8px; 
+    width: 400px; 
+    height: 500px; 
+    box-sizing: border-box; 
+    text-align: center; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+}
+
+
+.box-3 img {
+    max-width: 100%; 
+    max-height: 55%; 
+    margin-bottom: 20px; 
+    margin-top: auto;
+
+}
+
+.berriak-box::after {
+    content: "";
+    display: table;
+    clear: both;
+}

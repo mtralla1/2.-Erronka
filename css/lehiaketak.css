@@ -1,0 +1,157 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
+.pill-nav a {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: white;
+}
+
+.pill-nav a:hover {
+  background-color: #555;
+}
+
+.buttons {
+  display: flex;
+}
+
+.buttons a {
+  padding: 10px 15px;
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  background-color: #007bff;
+  border-radius: 5px;
+}
+
+.buttons a:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  position: fixed; /* Fijar al fondo */
+  bottom: 0; /* Fijar al fondo */
+  width: 100%; /* Ancho completo */
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Styles for the "Saioa Hasi" button */
+.buttons a.saioa-hasi {
+  background-color: #28a745; /* Green */
+}
+
+.buttons a.saioa-hasi:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Styles for the "Kontua Sortu" button */
+.buttons a.kontua-sortu {
+  background-color: #007bff; /* Blue */
+}
+
+.buttons a.kontua-sortu:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Dropdown button styles */
+.dropbtn {
+  background-color: #333;
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Additional styles for competitions */
+.competitions-container {
+  margin: 1px;
+  max-width: 800px;
+  margin-left: 20px;
+}
+
+/* Additional styles for competitions */
+.competition {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px; /* Reduce padding */
+  margin-bottom: 5px; /* Reduce margin */
+  max-width: 800px;
+  overflow-x: auto; /* Agregar barra de desplazamiento horizontal si el contenido es demasiado ancho */
+}
+
+.competition table {
+  width: 100%; /* Ajustar el ancho de la tabla al 100% del div */
+  border-collapse: separate; /* Separar los bordes de las celdas */
+  border-spacing: 20px; /* Espacio entre las celdas */
+}
+
+.competition tr {
+  display: flex; /* Utilizar flexbox */
+  align-items: center; /* Centrar verticalmente los elementos */
+  justify-content: space-between; /* Espaciar uniformemente los elementos */
+}
+
+.competition td {
+  display: flex; /* Utilizar flexbox */
+  align-items: center; /* Centrar verticalmente los elementos */
+}
+
+.competition td p {
+  margin: 0; /* Eliminar el margen predeterminado de los párrafos */
+}
+
+.competition td:not(:last-child) {
+  margin-right: 10px; /* Espacio de separación entre las celdas */
+}
+
+.competition img {
+  max-width: 30px; /* Ajustar el ancho máximo de la imagen */
+  height: auto; /* Mantener la proporción de aspecto */
+}
